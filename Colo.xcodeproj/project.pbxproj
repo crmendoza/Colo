@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		816EF770FF4D1924AC4BE552 /* libPods-Colo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */; };
+		877A84212143D23100A16CA8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84202143D23100A16CA8 /* Color.swift */; };
+		877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84222143D33600A16CA8 /* NetworkGateway.swift */; };
+		879D5288214363A100445A54 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D5287214363A100445A54 /* Palette.swift */; };
 		E01144351B16C0BE00B7580B /* close-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01144341B16C0BE00B7580B /* close-black@2x.png */; };
 		E09D84321AAAF8580053EB97 /* FavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D84311AAAF8580053EB97 /* FavouriteViewController.m */; };
 		E09D843A1AAB25400053EB97 /* MiniColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D84391AAB25400053EB97 /* MiniColorCell.m */; };
@@ -54,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Colo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		877A84202143D23100A16CA8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		877A84222143D33600A16CA8 /* NetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGateway.swift; sourceTree = "<group>"; };
+		879D52842143639100445A54 /* Colo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colo-Bridging-Header.h"; sourceTree = "<group>"; };
+		879D5287214363A100445A54 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		B2EA56858990CA9FA0345008 /* Pods-Colo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colo/Pods-Colo.debug.xcconfig"; sourceTree = "<group>"; };
 		C654C8D1ADD03448E62C6F6D /* Pods-Colo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Colo/Pods-Colo.release.xcconfig"; sourceTree = "<group>"; };
 		E01144341B16C0BE00B7580B /* close-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "close-black@2x.png"; path = "resources/close-black@2x.png"; sourceTree = "<group>"; };
@@ -144,6 +151,7 @@
 		877A840E2143CF7800A16CA8 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
+				877A84222143D33600A16CA8 /* NetworkGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -165,6 +173,8 @@
 		877A84262143D55E00A16CA8 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				879D5287214363A100445A54 /* Palette.swift */,
+				877A84202143D23100A16CA8 /* Color.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -443,6 +453,9 @@
 			files = (
 				E0E03A021A7A5F7300609DEB /* BouncePresentAnimation.m in Sources */,
 				E0E03A001A7A5F7300609DEB /* SwipeUpInteractionTransition.m in Sources */,
+				877A84212143D23100A16CA8 /* Color.swift in Sources */,
+				877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */,
+				879D5288214363A100445A54 /* Palette.swift in Sources */,
 				E0E4468E1AA4567B00DA13FC /* WZCoreDataManager.m in Sources */,
 				E09D843A1AAB25400053EB97 /* MiniColorCell.m in Sources */,
 				E0E446851AA31F3800DA13FC /* Colo.xcdatamodeld in Sources */,
