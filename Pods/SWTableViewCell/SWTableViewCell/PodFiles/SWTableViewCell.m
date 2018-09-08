@@ -76,7 +76,6 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
 
 - (void)initializer
 {
-    //self.contentView.bounds = CGRectMake(0, 0, 99999, 99999);
     layoutUpdating = NO;
     // Set up scroll view that will host our cell content
     self.cellScrollView = [[SWCellScrollView alloc] init];
@@ -167,8 +166,6 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
                                ]];
         
         [clipView addSubview:buttonView];
-        NSLayoutConstraint *buttonConstraint = [NSLayoutConstraint constraintWithItem:buttonView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:1.0 constant:-kUtilityButtonWidthDefault];
-        buttonConstraint.priority = 750;
         [self addConstraints:@[
                                // Pin the button view to the appropriate outer edges of its clipping view.
                                [NSLayoutConstraint constraintWithItem:buttonView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:clipView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0],
@@ -176,7 +173,7 @@ static NSString * const kTableViewCellContentView = @"UITableViewCellContentView
                                [NSLayoutConstraint constraintWithItem:buttonView attribute:alignmentAttribute relatedBy:NSLayoutRelationEqual toItem:clipView attribute:alignmentAttribute multiplier:1.0 constant:0.0],
                                
                                // Constrain the maximum button width so that at least a button's worth of contentView is left visible. (The button view will shrink accordingly.)
-                               buttonConstraint
+                               [NSLayoutConstraint constraintWithItem:buttonView attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationLessThanOrEqual toItem:self.contentView attribute:NSLayoutAttributeWidth multiplier:1.0 constant:-kUtilityButtonWidthDefault],
                                ]];
     }
 }
