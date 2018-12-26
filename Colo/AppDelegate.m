@@ -11,6 +11,7 @@
 #import "CollectionViewController.h"
 #import "BaseNavigationController.h"
 #import "Constant.h"
+#import "Colo-Swift.h"
 
 @interface AppDelegate ()
 @end
@@ -21,13 +22,15 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    CollectionViewController *test = [[CollectionViewController alloc] init];
-    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:test];
-    self.window.rootViewController = nav;
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+//    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+//    
+//    BridgingTestClass *bridgeTest = [[BridgingTestClass alloc] init];
+//    [bridgeTest fetchPalette];
+//    CollectionViewController *test = [[CollectionViewController alloc] init];
+//    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:test];
+//    self.window.rootViewController = nav;
+//    self.window.backgroundColor = [UIColor whiteColor];
+//    [self.window makeKeyAndVisible];
     
     Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
     NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];

@@ -10,6 +10,12 @@
 		816EF770FF4D1924AC4BE552 /* libPods-Colo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */; };
 		877A84212143D23100A16CA8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84202143D23100A16CA8 /* Color.swift */; };
 		877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84222143D33600A16CA8 /* NetworkGateway.swift */; };
+		877A84282143D70000A16CA8 /* PaletteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84272143D70000A16CA8 /* PaletteListInteractor.swift */; };
+		877A842A2143DC2B00A16CA8 /* BridgingTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84292143DC2B00A16CA8 /* BridgingTestClass.swift */; };
+		877A842C2143E0D900A16CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 877A842B2143E0D900A16CA8 /* Main.storyboard */; };
+		877A842E2143E2CD00A16CA8 /* PaletteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A842D2143E2CD00A16CA8 /* PaletteListViewController.swift */; };
+		877A84322143E9CF00A16CA8 /* PaletteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84312143E9CF00A16CA8 /* PaletteCell.swift */; };
+		877A84352143EB2B00A16CA8 /* UIColor+Colo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84342143EB2B00A16CA8 /* UIColor+Colo.swift */; };
 		879D5288214363A100445A54 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879D5287214363A100445A54 /* Palette.swift */; };
 		E01144351B16C0BE00B7580B /* close-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E01144341B16C0BE00B7580B /* close-black@2x.png */; };
 		E09D84321AAAF8580053EB97 /* FavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E09D84311AAAF8580053EB97 /* FavouriteViewController.m */; };
@@ -59,6 +65,12 @@
 		7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Colo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		877A84202143D23100A16CA8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		877A84222143D33600A16CA8 /* NetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGateway.swift; sourceTree = "<group>"; };
+		877A84272143D70000A16CA8 /* PaletteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListInteractor.swift; sourceTree = "<group>"; };
+		877A84292143DC2B00A16CA8 /* BridgingTestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingTestClass.swift; sourceTree = "<group>"; };
+		877A842B2143E0D900A16CA8 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		877A842D2143E2CD00A16CA8 /* PaletteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListViewController.swift; sourceTree = "<group>"; };
+		877A84312143E9CF00A16CA8 /* PaletteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteCell.swift; sourceTree = "<group>"; };
+		877A84342143EB2B00A16CA8 /* UIColor+Colo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colo.swift"; sourceTree = "<group>"; };
 		879D52842143639100445A54 /* Colo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Colo-Bridging-Header.h"; sourceTree = "<group>"; };
 		879D5287214363A100445A54 /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		B2EA56858990CA9FA0345008 /* Pods-Colo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Colo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Colo/Pods-Colo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,15 +171,9 @@
 		877A84242143D53200A16CA8 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				877A84272143D70000A16CA8 /* PaletteListInteractor.swift */,
 			);
 			path = Interactors;
-			sourceTree = "<group>";
-		};
-		877A84252143D53B00A16CA8 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 		877A84262143D55E00A16CA8 /* Entities */ = {
@@ -177,6 +183,14 @@
 				877A84202143D23100A16CA8 /* Color.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		877A84332143EAE500A16CA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				877A84342143EB2B00A16CA8 /* UIColor+Colo.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DC7064676892A654EDE29369 /* Pods */ = {
@@ -213,9 +227,9 @@
 		E0E039C41A7A5F2700609DEB /* Colo */ = {
 			isa = PBXGroup;
 			children = (
+				877A84332143EAE500A16CA8 /* Extensions */,
 				879D52842143639100445A54 /* Colo-Bridging-Header.h */,
 				877A84262143D55E00A16CA8 /* Entities */,
-				877A84252143D53B00A16CA8 /* Presenters */,
 				877A84242143D53200A16CA8 /* Interactors */,
 				877A840E2143CF7800A16CA8 /* Gateways */,
 				E0E4466B1AA2A1B100DA13FC /* ViewControllers */,
@@ -223,6 +237,8 @@
 				E0E03A121A7A600400609DEB /* Models */,
 				E0E039D21A7A5F2700609DEB /* Images.xcassets */,
 				E0E039C51A7A5F2700609DEB /* Supporting Files */,
+				877A84292143DC2B00A16CA8 /* BridgingTestClass.swift */,
+				877A842B2143E0D900A16CA8 /* Main.storyboard */,
 			);
 			path = Colo;
 			sourceTree = "<group>";
@@ -278,6 +294,7 @@
 				E0E039F81A7A5F7300609DEB /* NormalDismissAnimation.m */,
 				E0E039F91A7A5F7300609DEB /* BouncePresentAnimation.h */,
 				E0E039FA1A7A5F7300609DEB /* BouncePresentAnimation.m */,
+				877A84312143E9CF00A16CA8 /* PaletteCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -317,6 +334,7 @@
 				E0B2C5E01AA805D5009D1B97 /* SwitchViewController.m */,
 				E0B2C5DC1AA7FE0C009D1B97 /* PagerViewController.h */,
 				E0B2C5DD1AA7FE0C009D1B97 /* PagerViewController.m */,
+				877A842D2143E2CD00A16CA8 /* PaletteListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -408,6 +426,7 @@
 				E0C42CB01AC84DFD00750AF2 /* trash@2x.png in Resources */,
 				E09D84441AAC50F10053EB97 /* gear@2x.png in Resources */,
 				E09D84431AAC50F10053EB97 /* star@2x.png in Resources */,
+				877A842C2143E0D900A16CA8 /* Main.storyboard in Resources */,
 				E0C42CB11AC84DFD00750AF2 /* heart@2x.png in Resources */,
 				E0B195CA1ACAF4A1006C3A4F /* close-white@2x.png in Resources */,
 				E01144351B16C0BE00B7580B /* close-black@2x.png in Resources */,
@@ -457,10 +476,14 @@
 				877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */,
 				879D5288214363A100445A54 /* Palette.swift in Sources */,
 				E0E4468E1AA4567B00DA13FC /* WZCoreDataManager.m in Sources */,
+				877A842E2143E2CD00A16CA8 /* PaletteListViewController.swift in Sources */,
 				E09D843A1AAB25400053EB97 /* MiniColorCell.m in Sources */,
 				E0E446851AA31F3800DA13FC /* Colo.xcdatamodeld in Sources */,
 				E0E039FC1A7A5F7300609DEB /* CollectionViewController.m in Sources */,
 				E0B2C5DE1AA7FE0C009D1B97 /* PagerViewController.m in Sources */,
+				877A84322143E9CF00A16CA8 /* PaletteCell.swift in Sources */,
+				877A842A2143DC2B00A16CA8 /* BridgingTestClass.swift in Sources */,
+				877A84282143D70000A16CA8 /* PaletteListInteractor.swift in Sources */,
 				E0E03A101A7A5FA000609DEB /* ColorModel.m in Sources */,
 				E0B2C5CE1AA719CA009D1B97 /* ColorManagerObject.m in Sources */,
 				E09D84321AAAF8580053EB97 /* FavouriteViewController.m in Sources */,
@@ -469,6 +492,7 @@
 				E09D843D1AAB3CF10053EB97 /* MenuView.m in Sources */,
 				E0E039CB1A7A5F2700609DEB /* AppDelegate.m in Sources */,
 				E0E039FD1A7A5F7300609DEB /* SettingsViewController.m in Sources */,
+				877A84352143EB2B00A16CA8 /* UIColor+Colo.swift in Sources */,
 				E0E039C81A7A5F2700609DEB /* main.m in Sources */,
 				E0E039FB1A7A5F7300609DEB /* BaseNavigationController.m in Sources */,
 				E0E039FF1A7A5F7300609DEB /* DetailViewController.m in Sources */,
@@ -597,11 +621,13 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = Colo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = owehmgee.Colo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Colo/Models/Colo-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Colo/Colo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -618,10 +644,12 @@
 					/usr/include/libxml2,
 				);
 				INFOPLIST_FILE = Colo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = owehmgee.Colo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Colo/Models/Colo-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "Colo/Colo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};

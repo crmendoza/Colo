@@ -94,7 +94,7 @@ static NSString *CellIdentifier = @"ColorCell";
     //UI
     [self initializeUI];
     [self addConstraints];
-    [self fetchDataFromServer];
+//    [self fetchDataFromServer];
 }
 
 #pragma mark - Private Methods
