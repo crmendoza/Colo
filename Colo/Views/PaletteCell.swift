@@ -9,11 +9,18 @@ import UIKit
 class PaletteCell: UICollectionViewCell {
     @IBOutlet private var containerView: UIView!
     @IBOutlet private var paletteNameLabel: UILabel!
+    @IBOutlet private var shadowView: UIView!
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        applyShadow()
+        self.clipsToBounds = false
+    }
     override func prepareForReuse() {
         super.prepareForReuse()
         containerView.subviews.forEach { $0.removeFromSuperview() }
     }
+    
     func populateCell(_ palette: Palette) {
         paletteNameLabel.text = palette.title
         
@@ -25,5 +32,11 @@ class PaletteCell: UICollectionViewCell {
             containerView.addSubview(colorView)
             x += width
         }
+    }
+    
+    private func applyShadow() {
+        shadowView.layer.masksToBounds = false
+        shadowView.layer.shadowRadius = 15
+        shadowView.layer.shadowOpacity = 0.25
     }
 }
