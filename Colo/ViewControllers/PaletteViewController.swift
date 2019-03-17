@@ -78,6 +78,18 @@ extension PaletteViewController: UITableViewDataSource {
 
 extension PaletteViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return self.tableView.bounds.size.height / CGFloat(palette?.colors.count ?? 1)
+        let standardHeight = tableView.bounds.size.height / CGFloat(palette?.colors.count ?? 1)
+        if let index = tableView.indexPathForSelectedRow?.row {
+            let selectedHeight = standardHeight * 2
+            let unselectedHeight = (tableView.bounds.size.height - selectedHeight) / CGFloat((palette?.colors.count ?? 1) - 1)
+            return indexPath.row == index ? selectedHeight : unselectedHeight
+        } else {
+            return standardHeight
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 }

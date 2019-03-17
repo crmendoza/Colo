@@ -10,7 +10,7 @@
 		816EF770FF4D1924AC4BE552 /* libPods-Colo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */; };
 		871B9FD7223E1540001273AA /* PaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871B9FD6223E1540001273AA /* PaletteViewController.swift */; };
 		871B9FD9223E15FD001273AA /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871B9FD8223E15FD001273AA /* ColorCell.swift */; };
-		877A84212143D23100A16CA8 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84202143D23100A16CA8 /* Color.swift */; };
+		877A84212143D23100A16CA8 /* ColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84202143D23100A16CA8 /* ColorData.swift */; };
 		877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84222143D33600A16CA8 /* NetworkGateway.swift */; };
 		877A84282143D70000A16CA8 /* PaletteListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84272143D70000A16CA8 /* PaletteListInteractor.swift */; };
 		877A842A2143DC2B00A16CA8 /* BridgingTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877A84292143DC2B00A16CA8 /* BridgingTestClass.swift */; };
@@ -66,7 +66,7 @@
 		7F5FB91B68869F9293BEF4D4 /* libPods-Colo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Colo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		871B9FD6223E1540001273AA /* PaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteViewController.swift; sourceTree = "<group>"; };
 		871B9FD8223E15FD001273AA /* ColorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
-		877A84202143D23100A16CA8 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		877A84202143D23100A16CA8 /* ColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorData.swift; sourceTree = "<group>"; };
 		877A84222143D33600A16CA8 /* NetworkGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkGateway.swift; sourceTree = "<group>"; };
 		877A84272143D70000A16CA8 /* PaletteListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteListInteractor.swift; sourceTree = "<group>"; };
 		877A84292143DC2B00A16CA8 /* BridgingTestClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgingTestClass.swift; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				879D5287214363A100445A54 /* Palette.swift */,
-				877A84202143D23100A16CA8 /* Color.swift */,
+				877A84202143D23100A16CA8 /* ColorData.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -467,7 +467,7 @@
 			files = (
 				E0E03A021A7A5F7300609DEB /* BouncePresentAnimation.m in Sources */,
 				E0E03A001A7A5F7300609DEB /* SwipeUpInteractionTransition.m in Sources */,
-				877A84212143D23100A16CA8 /* Color.swift in Sources */,
+				877A84212143D23100A16CA8 /* ColorData.swift in Sources */,
 				877A84232143D33600A16CA8 /* NetworkGateway.swift in Sources */,
 				879D5288214363A100445A54 /* Palette.swift in Sources */,
 				E0E4468E1AA4567B00DA13FC /* WZCoreDataManager.m in Sources */,
