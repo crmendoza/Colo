@@ -10,9 +10,9 @@ struct Palette {
     let id: Int
     let title: String
     let username: String
-    let colors: [String]
+    let colors: [RGBColor]
     
-    init(id: Int, title: String, username: String, colors: [String]) {
+    init(id: Int, title: String, username: String, colors: [RGBColor]) {
         self.id = id
         self.title = title
         self.username = username
@@ -34,7 +34,8 @@ extension Palette: Decodable {
         let title: String = try container.decode(String.self, forKey: .title)
         let username: String = try container.decode(String.self, forKey: .username)
         let colors: [String] = try container.decode([String].self, forKey: .colors)
+        let rgbColors = colors.map { RGBColor(hexString: $0) }
         
-        self.init(id: id, title: title, username: username, colors: colors)
+        self.init(id: id, title: title, username: username, colors: rgbColors)
     }
 }

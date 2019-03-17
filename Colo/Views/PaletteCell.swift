@@ -7,8 +7,8 @@
 import UIKit
 
 class PaletteCell: UICollectionViewCell {
-    @IBOutlet var containerView: UIView!
-    @IBOutlet var paletteNameLabel: UILabel!
+    @IBOutlet private var containerView: UIView!
+    @IBOutlet private var paletteNameLabel: UILabel!
     
     override func prepareForReuse() {
         super.prepareForReuse()
@@ -21,7 +21,7 @@ class PaletteCell: UICollectionViewCell {
         var x: CGFloat = 0.0
         for color in palette.colors {
             let colorView = UIView(frame: CGRect(x: x, y: 0.0, width: width, height: containerView.frame.height))
-            colorView.backgroundColor = UIColor(hex: color)
+            colorView.backgroundColor = color.uicolor
             containerView.addSubview(colorView)
             x += width
         }
