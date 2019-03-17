@@ -15,10 +15,14 @@ class PaletteListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationController?.navigationBar.isHidden = true
         paletteInteractor = PaletteListInteractor(networkGateway: NetworkGateway())
         paletteInteractor.delegate = self
         paletteInteractor.fetchPaletteList()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
     }
 }
 
